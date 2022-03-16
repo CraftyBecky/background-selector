@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: grey;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: black;
+    margin: 2rem;
+}
+
+.container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+    "uhf gif gif sissors"
+    "threeD gif gif deep-end"
+    "alapalooza gif gif lynwood"
+    "dare-tobe song song bad-hair";
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.uhf, .threeD, .alapalooza, .dare-tobe, .sissors, .deep-end, .lynwood, .bad-hair {
+    place-self: center;
+    height: 150px;
+    width: 150px;
+}
+
+.uhf {
+    grid-area: uhf;
+}
+
+.sissors {
+    grid-area: sissors;
+}
+
+.threeD {
+    grid-area: threeD;
+}
+
+.alapalooza {
+    grid-area: alapalooza;
+}
+
+.dare-tobe {
+    grid-area: dare-tobe;
+}
+
+.song {
+    border: 5px solid purple;
+    color: purple;
+    place-self: stretch;
+    grid-area: song; 
+}
+
+.deep-end {
+    grid-area: deep-end;
+}
+
+.lynwood {
+    grid-area: lynwood;
+}
+
+.bad-hair {
+    grid-area: bad-hair;
+}
+
+.gif {
+    grid-area: gif;
+    place-self: stretch;  
+}
+
+
+
