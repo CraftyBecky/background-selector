@@ -6,10 +6,10 @@
 
 body {
     font-family: 'Acme', sans-serif;
-    background: grey;
+    background-color: grey;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     text-align: center;
     color: black;
     margin: 2rem;
@@ -32,12 +32,16 @@ h1 {
     font-weight: 700;;
 }
 
-button {
+.button {
     background: transparent;
     border: none;
     outline: none;
     display: block;
     cursor: pointer;
+}    
+
+.button:hover {
+    border: 3px blue solid;
 }
 
 p {
@@ -97,6 +101,8 @@ p {
     height: 500px;
     width: 800px
 }
+
+
 
 
 
